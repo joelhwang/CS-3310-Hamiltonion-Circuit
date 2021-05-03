@@ -2,10 +2,10 @@ package project;
 
 public class GenerateGraph 
 {
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		generate(5);
-	}
+	}*/
 	
 	public static void generate(int size)
 	{
