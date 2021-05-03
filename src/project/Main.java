@@ -23,7 +23,7 @@ public class Main
 		int input = sc.nextInt();
 		
 		//if quit is selected
-		if(input > 4 || input < 1)
+		if(input > 5 || input < 1)
 			return;
 		
 		//read algorithm progress choice
@@ -40,11 +40,12 @@ public class Main
 	 */
 	private static void promptUser()
 	{
-		System.out.println("Enter 1, 2, 3, or 4 to test an example:");
+		System.out.println("Enter 1, 2, 3, 4, or 5 to test an example:");
 		System.out.println("[1] - Example1.txt");
 		System.out.println("[2] - Example2.txt");
 		System.out.println("[3] - Example3.txt");
-		System.out.println("[4] - CustomExample.txt");
+		System.out.println("[4] - Example4.txt");		
+		System.out.println("[5] - CustomExample.txt");
 		System.out.println("[Other Number] - Quit");
 		System.out.print("Option #: ");
 	}
@@ -70,10 +71,11 @@ public class Main
 			case 1:
 			case 2:
 			case 3:
+			case 4:
 				String filePath = String.format("./Example%s.txt", input);
 				h.testHamiltonian(filePath, dP);
 				break;
-			case 4:
+			case 5:
 				h.testHamiltonian("./CustomExample.txt", dP);
 		}
 	}
